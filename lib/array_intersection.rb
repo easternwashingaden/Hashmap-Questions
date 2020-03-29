@@ -1,3 +1,5 @@
+#Time complexity: O(n+m)
+#Space complexity: O(n)
 def intersection(list1, list2)
   
   #create a hash with each element of the array as keys and value as true 

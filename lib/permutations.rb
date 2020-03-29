@@ -1,4 +1,5 @@
-
+#Time complexity: O(n+m)
+#Space complexity: O(n)
 def permutations?(string1, string2)
   return true if string1 == "" && string2 == ""
   return false if (string1.length != string2.length) 
