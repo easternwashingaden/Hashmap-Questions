@@ -1,5 +1,5 @@
-#Time complexity: O(n+m)
-#Space complexity: O(n)
+#Time complexity: O(n+m+l)
+#Space complexity: O(n^2)
 
 def palindrome_permutation?(string)
   return true if string == ""
@@ -19,11 +19,10 @@ def palindrome_permutation?(string)
   string_array.length.times do |i|
     string_hash[string_array[i]] = reverse_string_array[i]
   end
-  print string_hash
-
+  
   #compare each key and value of the hash
   string_hash.each do |key, value|
-    if value == key
+    if key == value
       return true
     end
   end
